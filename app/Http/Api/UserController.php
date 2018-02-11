@@ -38,7 +38,8 @@ class UserController extends Controller
                 return response()->json(compact('username','token'));
             }
         }catch(\Exception $e){
-            return $e->getMessage();
+            //return $e->getMessage();
+			return $e->getMessage();//add by user a
         }
     }
 }
