@@ -25,7 +25,8 @@ class UserController extends Controller
 
             $username = User::where('email','=',$email)->first();
             if(!$username){
-                return response()->json("Invalid email or password");
+                return response()->json("Invalid email or password");//returning username or password if invalid 
+//added by master
             }
             else{
                 try {
