@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in as a main admin
                 </div>
 
                 <a href="{{url('user')}}">Click here to view user info</a>
