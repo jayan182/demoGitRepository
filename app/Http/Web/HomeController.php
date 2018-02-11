@@ -12,7 +12,8 @@ class HomeController extends Controller
 {
     public function login(Request $request){
         try{
-            $client = new Client(['base_uri'=>'http://localhost:8016/api/']);
+//added buy userS
+            $client = new Client(['base_uri'=>'http://testserver.com/api/']);
             $response = $client->request('post','login',[
                 'form_params' =>[
                     'email' => $request->get('email'),
